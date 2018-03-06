@@ -10,12 +10,18 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class Main {
+
+    private static final String REGEX_PATTERN = "\\d*.[+]?\\d*(\\,\\d+)?";
+
     public static void main (String[] args) {
         try {
             String path = args[0];
@@ -63,14 +69,37 @@ public class Main {
         BufferedWriter br = new BufferedWriter(new FileWriter(buildOutput(fileName)));
         StringBuilder sb = new StringBuilder();
         for (String element : lines) {
-            String value = element.split(" ")[0];
-            value = value.replace("\"", "");
-            sb.append(value);
-            sb.append("\n");
+            try {
+                String value = element.split(" ")[0];
+                value = value.replace("\"", "");
+                String number = checknumeric(value);
+                if(number != null) {
+                    sb.append(value);
+                    sb.append("\n");
+                }
+            } catch (Exception ex) {
+                System.out.println("error");
+            }
+
         }
 
         br.write(sb.toString());
         br.close();
+    }
+
+    public static String checknumeric(String str){
+        String numericString = null;
+        String temp;
+        if(str.startsWith("-")){ //checks for negative values
+            temp=str.substring(1);
+            if(temp.matches(REGEX_PATTERN)){
+                numericString=str;
+            }
+        }
+        if(str.matches(REGEX_PATTERN)) {
+            numericString=str;
+        }
+        return numericString;
     }
 
     private static String buildOutput(String fileName) {
