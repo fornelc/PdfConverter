@@ -97,13 +97,6 @@ public class Converter {
 
     private String checknumeric(String str){
         String numericString = null;
-        String temp;
-        /*if(str.startsWith("-")){ //checks for negative values
-            temp=str.substring(1);
-            if(temp.matches(REGEX_PATTERN)){
-                numericString=str;
-            }
-        }*/
         if(str.matches(REGEX_PATTERN)) {
             numericString=str;
         }
