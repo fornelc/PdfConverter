@@ -1,4 +1,4 @@
-package utils;
+package technology.converter.utils;
 
 public interface HasText {
 

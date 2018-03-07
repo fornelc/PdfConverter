@@ -1,6 +1,6 @@
-package writers;
+package technology.converter.writers;
 
-import utils.Table;
+import technology.converter.utils.Table;
 
 import java.io.IOException;
 import java.util.List;

@@ -1,4 +1,4 @@
-package utils;
+package technology.converter.utils;
 
 import org.apache.pdfbox.contentstream.PDFGraphicsStreamEngine;
 import org.apache.pdfbox.cos.COSName;

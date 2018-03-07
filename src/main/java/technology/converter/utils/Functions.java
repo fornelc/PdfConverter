@@ -1,4 +1,4 @@
-package utils;
+package technology.converter.utils;
 
 import org.apache.commons.cli.ParseException;
 import org.apache.pdfbox.pdmodel.PDDocument;

@@ -9,7 +9,7 @@
  * This program is free software under the LGPL (>=v2.1)
  * Read the file LICENSE.txt coming with the sources for details.
  */
-package utils;
+package technology.converter.utils;
 
 import java.awt.geom.Line2D;
 import java.awt.geom.Rectangle2D;

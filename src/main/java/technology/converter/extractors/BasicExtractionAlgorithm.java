@@ -1,8 +1,8 @@
-package extractors;
-
-import utils.*;
+package technology.converter.extractors;
 
 import java.util.*;
+
+import technology.converter.utils.*;
 
 public class BasicExtractionAlgorithm implements ExtractionAlgorithm {
     

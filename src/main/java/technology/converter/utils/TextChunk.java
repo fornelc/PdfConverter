@@ -1,4 +1,4 @@
-package utils;
+package technology.converter.utils;
 
 import java.text.Normalizer;
 import java.util.*;

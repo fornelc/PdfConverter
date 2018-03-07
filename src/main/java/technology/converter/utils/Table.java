@@ -1,6 +1,6 @@
-package utils;
+package technology.converter.utils;
 
-import extractors.ExtractionAlgorithm;
+import technology.converter.extractors.ExtractionAlgorithm;
 
 import java.util.ArrayList;
 import java.util.List;

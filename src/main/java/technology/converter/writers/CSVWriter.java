@@ -1,9 +1,9 @@
-package writers;
+package technology.converter.writers;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVPrinter;
-import utils.RectangularTextContainer;
-import utils.Table;
+import technology.converter.utils.RectangularTextContainer;
+import technology.converter.utils.Table;
 
 import java.io.IOException;
 import java.util.ArrayList;

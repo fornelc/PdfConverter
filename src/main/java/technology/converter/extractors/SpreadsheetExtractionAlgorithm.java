@@ -1,6 +1,6 @@
-package extractors;
+package technology.converter.extractors;
 
-import utils.*;
+import technology.converter.utils.*;
 
 import java.awt.geom.Point2D;
 import java.util.*;

@@ -1,7 +1,7 @@
-package extractors;
+package technology.converter.extractors;
 
-import utils.Page;
-import utils.Table;
+import technology.converter.utils.Page;
+import technology.converter.utils.Table;
 
 import java.util.List;
 

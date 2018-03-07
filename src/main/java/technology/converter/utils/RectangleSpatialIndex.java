@@ -1,4 +1,4 @@
-package utils;
+package technology.converter.utils;
 
 import gnu.trove.procedure.TIntProcedure;
 import net.sf.jsi.SpatialIndex;
